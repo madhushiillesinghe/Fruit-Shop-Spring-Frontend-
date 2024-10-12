@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #007aff;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .sectionName {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header ul li {
+  background-color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header ul li:hover {
+  background-color: #24a746;
+  color: white;
+}
+
+header ul li a {
+  color: #007aff;
+  transition: color 0.3s;
+}
+
+header ul li:hover a {
+  color: white;
+}
+
+section {
+  display: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 5px;
+}
+
+section > div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+form div input,
+form select {
+  padding: 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.buttons .saveBtn {
+  background-color: #e69019;
+  width: 100px;
+}
+
+.buttons .removeBtn {
+  background-color: rgb(233, 110, 29);
+  width: 100px;
+}
+
+.buttons .updateBtn {
+  background-color: rgb(167, 69, 4);
+  width: 100px;
+}
+
+.buttons .searchBtn {
+  background-color: rgb(233, 110, 29);
+  width: 100px;
+}
+
+.deleteBtn {
+  background-color: rgb(167, 69, 4);
+  width: 100px;
+}
+
+.clearBtn {
+  background-color: #e69019;
+  width: 100px;
+}
+
+.buttons button:hover {
+  opacity: 0.9;
+}
+
+.addBtn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.addBtn:hover {
+  background: linear-gradient(135deg, #feb47b, #ff7e5f);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.addBtn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8rem;
+}
+
+th,
+td {
+  padding: 1rem;
+  border: 1px solid #c4c4c4;
+  text-align: center;
+  font-size: 1rem;
+}
+
+th {
+  background-color: rgb(234, 96, 47);
+  color: white;
+}
+
+.includeDetails,
+.ItemSelect,
+.TotalCal {
+  border: 1px solid #000;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.includeDetails h1,
+.ItemSelect h1,
+.TotalCal h1,
+.TotalCal h2 {
+  background-color: rgb(234, 96, 47);
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.TotalCal h2 {
+  background-color: #d43a40;
+}
+
+.TotalCal form > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.TotalCal form > div > div {
+  flex: 1;
+}
+
+.TotalCal button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(167, 69, 4);
+  color: white;
+  margin-top: 1rem;
+}
+
+.TotalCal button:hover {
+  opacity: 0.9;
+}
+
+.mainTable {
+  width: 90%;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 5rem;
+}
+
+.tableHeader {
+  display: flex;
+  background-color: #007aff;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.tableHeader > div {
+  flex: 1;
+  text-align: center;
+}
+
+.tableRows > div {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.tableRows > div:last-child {
+  border-bottom: none;
+}
+
+.tableRows > div:hover {
+  background-color: #f9f9f9;
+}
+
+.tableRows > div > div {
+  flex: 1;
+  text-align: center;
+  font-size: 1rem;
+  color: #333333;
+  padding: 10px 0;
+}
+
+#table {
+  border: 1px solid;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  header ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section > div {
+    grid-template-columns: 1fr;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th,
+  td {
+    padding: 0.5rem;
+  }
+
+  .tableHeader,
+  .tableRows > div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .tableHeader > div,
+  .tableRows > div > div {
+    text-align: left;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header .sectionName {
+    font-size: 1.2rem;
+  }
+
+  header ul li {
+    font-size: 0.7rem;
+    padding: 8px 15px;
+  }
+
+  form div input,
+  form select {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  th,
+  td {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+  }
+
+  .TotalCal h1,
+  .TotalCal h2 {
+    font-size: 1.5rem;
+  }
+
+  .tableHeader,
+  .tableRows > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tableHeader > div:nth-child(3),
+  .tableHeader > div:nth-child(4),
+  .tableHeader > div:nth-child(5),
+  .tableRows > div > div:nth-child(3),
+  .tableRows > div > div:nth-child(4),
+  .tableRows > div > div:nth-child(5) {
+    display: none;
+  }
+}
